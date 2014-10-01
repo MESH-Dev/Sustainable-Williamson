@@ -1,0 +1,66 @@
+/* Imported Fonts
+================================================== */
+
+/* Import fonts. Example:
+
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700');
+@import url('assets/libs/font-awesome-4.1.0/css/font-awesome.min.css');
+
+*/
+
+/* #Typography
+================================================== */
+
+	//base
+
+	html, body{}
+
+	//headings
+	h1 {}
+	h2 {}
+	h3 {}
+	h4 {}
+	h5 {}
+	h6 {}
+
+	//paragraphs
+	p { margin: 0 0 18px 0; }
+	p img { margin: 0; }
+
+	//styles
+	em { font-style: italic; }
+	strong { font-weight: bold;  }
+
+
+	//blockquote
+	blockquote, blockquote p {}
+	blockquote {}
+	blockquote cite {}
+	blockquote cite:before {}
+	blockquote cite a, blockquote cite a:visited {}
+
+	//horizontal rule
+	hr {}
+
+
+/* #Links
+================================================== */
+	a {}
+	a:hover, a:focus {}
+	p a, p a:visited {}
+
+
+/* #Lists
+================================================== */
+	ul, ol { margin-bottom: 0px; }
+	ul { list-style: circle outside; }
+	ol { list-style: decimal; }
+	ol, ul, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	ul ul, ul ol,
+	ol ol, ol ul { margin: 0px 0 0px 20px; font-size: 100%;  }
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 0px; }
+	li { line-height: 26px; margin-bottom: 0px; }
