@@ -7,8 +7,44 @@
 /* Header Styles
 ================================================== */
 
-header { background-position: top center; width: 100%; height: 700px; position: absolute; overflow: hidden; text-align: center; color: #fff; }
+header { background-position: top center; width: 100%; height: 700px; position: absolute; overflow: hidden; text-align: center; color: #fff;
+	.top-third { width: $one_third; float: left;
+		.top-third-text { margin: 10px;
+			span { color: white; text-transform: uppercase; font-family: $nexa-bold; }
+		}
+	}
 
+	.container { position: relative; height: 100%;}
+
+	// first row
+	#logo { float: right; overflow: visible; position: relative;
+		img { max-width: none; }
+	}
+	#mainNav { float: right; margin: 25px 0px;
+		ul { list-style: none;
+			li { text-transform: uppercase; display: inline; padding: 0px 10px;
+				a { color: $yellow; font-family: $gothic; font-size: 26px; text-decoration: none; }
+			}
+			li:last-child { padding-right: 0px; }
+			li:first-child { padding-left: 0px; }
+		}
+	}
+
+	// second row
+	.angle-left { float: left; color: black; font-size: 25px; }
+	.content-right { float: right; padding-top: 5px;
+		span { color: black; font-family: $nexa-bold; font-size: 15px; }
+	}
+
+	// third row
+
+	.home-callout { margin-top: 10%;
+		span { color: white; text-transform: uppercase; font-family: $gothic; font-size: 75px; border-bottom: 5px solid white; }
+	}
+	.home-callout:after { content: url(assets/img/circle.png); position: relative; display: block; margin-top: 7px; }
+
+
+}
 
 /* Navigation Styles
 ================================================== */

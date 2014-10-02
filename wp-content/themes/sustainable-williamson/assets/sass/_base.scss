@@ -30,6 +30,25 @@ $minion:"minion-pro";
 
 */
 
+$light-green: #a8c48e;
+$blue: #84c6be;
+$bright-green: #7ccc79;
+$yellow: #f8ee8f;
+
+$gothic: "league-gothic";
+$nexa-bold: nexa_bold;
+$nexa-light: nexa_light;
+
+$one_third: percentage(4/12);
+
+/* #Global Backgrounds
+================================================== */
+
+.light-green-bg { background: $light-green; }
+.blue-bg { background: $blue; }
+.bright-green-bg { background: $bright-green; }
+.white-bg { background: white; }
+
 
 /* #Basic Styles
 ================================================== */

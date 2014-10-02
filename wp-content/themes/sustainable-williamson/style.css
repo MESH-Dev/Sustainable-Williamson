@@ -77,9 +77,31 @@ $red: #E31B23;
 $minion:"minion-pro";
 
 */
+/* #Global Backgrounds
+================================================== */
+/* line 47, assets/sass/_base.scss */
+.light-green-bg {
+  background: #a8c48e;
+}
+
+/* line 48, assets/sass/_base.scss */
+.blue-bg {
+  background: #84c6be;
+}
+
+/* line 49, assets/sass/_base.scss */
+.bright-green-bg {
+  background: #7ccc79;
+}
+
+/* line 50, assets/sass/_base.scss */
+.white-bg {
+  background: white;
+}
+
 /* #Basic Styles
 ================================================== */
-/* line 36, assets/sass/_base.scss */
+/* line 55, assets/sass/_base.scss */
 body {
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
@@ -94,7 +116,7 @@ body {
 ================================================== */
 /* #Images
 ================================================== */
-/* line 65, assets/sass/_base.scss */
+/* line 84, assets/sass/_base.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -102,60 +124,60 @@ img {
 
 /* WordPress Image Styles
    ========================================================================== */
-/* line 72, assets/sass/_base.scss */
+/* line 91, assets/sass/_base.scss */
 .alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 73, assets/sass/_base.scss */
+/* line 92, assets/sass/_base.scss */
 .aligncenter, div.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 74, assets/sass/_base.scss */
+/* line 93, assets/sass/_base.scss */
 .alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 75, assets/sass/_base.scss */
+/* line 94, assets/sass/_base.scss */
 .alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 76, assets/sass/_base.scss */
+/* line 95, assets/sass/_base.scss */
 .aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 77, assets/sass/_base.scss */
+/* line 96, assets/sass/_base.scss */
 a img.alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 78, assets/sass/_base.scss */
+/* line 97, assets/sass/_base.scss */
 a img.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 79, assets/sass/_base.scss */
+/* line 98, assets/sass/_base.scss */
 a img.alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 80, assets/sass/_base.scss */
+/* line 99, assets/sass/_base.scss */
 a img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 81, assets/sass/_base.scss */
+/* line 100, assets/sass/_base.scss */
 .wp-caption {
   background: #FFF;
   max-width: 96%;
@@ -163,22 +185,22 @@ a img.aligncenter {
   text-align: center;
 }
 
-/* line 82, assets/sass/_base.scss */
+/* line 101, assets/sass/_base.scss */
 .wp-caption.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 83, assets/sass/_base.scss */
+/* line 102, assets/sass/_base.scss */
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0;
 }
 
-/* line 84, assets/sass/_base.scss */
+/* line 103, assets/sass/_base.scss */
 .wp-caption.alignright {
   margin: 5px 0 20px 20px;
 }
 
-/* line 85, assets/sass/_base.scss */
+/* line 104, assets/sass/_base.scss */
 .wp-caption img {
   border: 0 none;
   height: auto;
@@ -188,7 +210,7 @@ a img.aligncenter {
   width: auto;
 }
 
-/* line 86, assets/sass/_base.scss */
+/* line 105, assets/sass/_base.scss */
 .wp-caption p.wp-caption-text, .gallery-caption {
   font-size: 11px;
   line-height: 17px;
@@ -196,7 +218,7 @@ a img.aligncenter {
   padding: 0 4px 5px;
 }
 
-/* line 89, assets/sass/_base.scss */
+/* line 108, assets/sass/_base.scss */
 .add-bottom {
   margin-bottom: 20px !important;
 }
@@ -209,24 +231,32 @@ a img.aligncenter {
 @import url('assets/libs/font-awesome-4.1.0/css/font-awesome.min.css');
 
 */
+@font-face {
+  font-family: nexa_bold;
+  src: url(assets/fonts/nexa_bold.otf);
+}
+@font-face {
+  font-family: nexa_light;
+  src: url(assets/fonts/nexa_light.otf);
+}
 /* #Typography
 ================================================== */
-/* line 27, assets/sass/_typography.scss */
+/* line 30, assets/sass/_typography.scss */
 p {
   margin: 0 0 18px 0;
 }
 
-/* line 28, assets/sass/_typography.scss */
+/* line 31, assets/sass/_typography.scss */
 p img {
   margin: 0;
 }
 
-/* line 31, assets/sass/_typography.scss */
+/* line 34, assets/sass/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 32, assets/sass/_typography.scss */
+/* line 35, assets/sass/_typography.scss */
 strong {
   font-weight: bold;
 }
@@ -235,55 +265,55 @@ strong {
 ================================================== */
 /* #Lists
 ================================================== */
-/* line 55, assets/sass/_typography.scss */
+/* line 58, assets/sass/_typography.scss */
 ul, ol {
   margin-bottom: 0px;
 }
 
-/* line 56, assets/sass/_typography.scss */
+/* line 59, assets/sass/_typography.scss */
 ul {
   list-style: circle outside;
 }
 
-/* line 57, assets/sass/_typography.scss */
+/* line 60, assets/sass/_typography.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 58, assets/sass/_typography.scss */
+/* line 61, assets/sass/_typography.scss */
 ol, ul, ul.square, ul.circle, ul.disc {
   margin-left: 30px;
 }
 
-/* line 59, assets/sass/_typography.scss */
+/* line 62, assets/sass/_typography.scss */
 ul.square {
   list-style: square outside;
 }
 
-/* line 60, assets/sass/_typography.scss */
+/* line 63, assets/sass/_typography.scss */
 ul.circle {
   list-style: circle outside;
 }
 
-/* line 61, assets/sass/_typography.scss */
+/* line 64, assets/sass/_typography.scss */
 ul.disc {
   list-style: disc outside;
 }
 
-/* line 62, assets/sass/_typography.scss */
+/* line 65, assets/sass/_typography.scss */
 ul ul, ul ol,
 ol ol, ol ul {
   margin: 0px 0 0px 20px;
   font-size: 100%;
 }
 
-/* line 64, assets/sass/_typography.scss */
+/* line 67, assets/sass/_typography.scss */
 ul ul li, ul ol li,
 ol ol li, ol ul li {
   margin-bottom: 0px;
 }
 
-/* line 66, assets/sass/_typography.scss */
+/* line 69, assets/sass/_typography.scss */
 li {
   line-height: 26px;
   margin-bottom: 0px;
@@ -1144,6 +1174,102 @@ header {
   overflow: hidden;
   text-align: center;
   color: #fff;
+}
+/* line 11, assets/sass/_layout.scss */
+header .top-third {
+  width: 33.33333%;
+  float: left;
+}
+/* line 12, assets/sass/_layout.scss */
+header .top-third .top-third-text {
+  margin: 10px;
+}
+/* line 13, assets/sass/_layout.scss */
+header .top-third .top-third-text span {
+  color: white;
+  text-transform: uppercase;
+  font-family: nexa_bold;
+}
+/* line 17, assets/sass/_layout.scss */
+header .container {
+  position: relative;
+  height: 100%;
+}
+/* line 20, assets/sass/_layout.scss */
+header #logo {
+  float: right;
+  overflow: visible;
+  position: relative;
+}
+/* line 21, assets/sass/_layout.scss */
+header #logo img {
+  max-width: none;
+}
+/* line 23, assets/sass/_layout.scss */
+header #mainNav {
+  float: right;
+  margin: 25px 0px;
+}
+/* line 24, assets/sass/_layout.scss */
+header #mainNav ul {
+  list-style: none;
+}
+/* line 25, assets/sass/_layout.scss */
+header #mainNav ul li {
+  text-transform: uppercase;
+  display: inline;
+  padding: 0px 10px;
+}
+/* line 26, assets/sass/_layout.scss */
+header #mainNav ul li a {
+  color: #f8ee8f;
+  font-family: "league-gothic";
+  font-size: 26px;
+  text-decoration: none;
+}
+/* line 28, assets/sass/_layout.scss */
+header #mainNav ul li:last-child {
+  padding-right: 0px;
+}
+/* line 29, assets/sass/_layout.scss */
+header #mainNav ul li:first-child {
+  padding-left: 0px;
+}
+/* line 34, assets/sass/_layout.scss */
+header .angle-left {
+  float: left;
+  color: black;
+  font-size: 25px;
+}
+/* line 35, assets/sass/_layout.scss */
+header .content-right {
+  float: right;
+  padding-top: 5px;
+}
+/* line 36, assets/sass/_layout.scss */
+header .content-right span {
+  color: black;
+  font-family: nexa_bold;
+  font-size: 15px;
+}
+/* line 41, assets/sass/_layout.scss */
+header .home-callout {
+  margin-top: 10%;
+}
+/* line 42, assets/sass/_layout.scss */
+header .home-callout span {
+  color: white;
+  text-transform: uppercase;
+  font-family: "league-gothic";
+  font-size: 75px;
+  border-bottom: 5px solid white;
+}
+/* line 44, assets/sass/_layout.scss */
+header .home-callout:after {
+  content: url(assets/img/circle.png);
+  position: relative;
+  display: block;
+  margin-top: 7px;
 }
 
 /* Navigation Styles
