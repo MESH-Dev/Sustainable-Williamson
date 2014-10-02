@@ -6,7 +6,7 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header style="background: url(<?php header_image(); ?>) no-repeat top center fixed; background-size: 100%;">
+<header style="background: url(<?php header_image(); ?>) no-repeat top center fixed; background-size: cover;">
   <div class="row">
     <div class="top-third light-green-bg">
       <div class="top-third-text">
