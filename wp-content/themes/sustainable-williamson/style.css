@@ -1255,6 +1255,7 @@ header .content-right span {
 /* line 41, assets/sass/_layout.scss */
 header .home-callout {
   margin-top: 10%;
+  z-index: 999;
 }
 /* line 42, assets/sass/_layout.scss */
 header .home-callout span {
@@ -1270,6 +1271,7 @@ header .home-callout:after {
   position: relative;
   display: block;
   margin-top: 7px;
+  z-index: 999;
 }
 
 /* Navigation Styles
@@ -1278,11 +1280,60 @@ header .home-callout:after {
 ================================================== */
 /* Homepage Styles
 ================================================== */
+/* line 61, assets/sass/_layout.scss */
+.wrapper {
+  top: 610px;
+  position: absolute;
+  width: 100%;
+}
+
+/* line 63, assets/sass/_layout.scss */
+#content {
+  background: #f8ee8f;
+}
+/* line 64, assets/sass/_layout.scss */
+#content .content-callout {
+  text-align: center;
+  padding: 10%;
+}
+/* line 65, assets/sass/_layout.scss */
+#content .content-callout span {
+  font-family: nexa_light;
+  font-size: 22px;
+  line-height: 35px;
+}
+
+/* line 69, assets/sass/_layout.scss */
+#overview {
+  background: white;
+}
+/* line 70, assets/sass/_layout.scss */
+#overview .overview-callout {
+  border: 2px solid black;
+  padding: 35px;
+  text-align: center;
+  height: 140px;
+  margin: 20% 0px;
+}
+/* line 71, assets/sass/_layout.scss */
+#overview .overview-callout .overview-callout-headline {
+  font-family: "league-gothic";
+  text-transform: uppercase;
+  color: black;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+/* line 72, assets/sass/_layout.scss */
+#overview .overview-callout .overview-callout-body {
+  font-family: nexa_light;
+  color: black;
+}
+
 /* PAGE Styles
 ================================================== */
 /* FOOTER Styles
 ================================================== */
-/* line 71, assets/sass/_layout.scss */
+/* line 84, assets/sass/_layout.scss */
 footer {
   background: #d4e4bf;
   width: 100%;

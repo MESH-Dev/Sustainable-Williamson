@@ -38,10 +38,10 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 
 	// third row
 
-	.home-callout { margin-top: 10%;
+	.home-callout { margin-top: 10%; z-index: 999;
 		span { color: white; text-transform: uppercase; font-family: $gothic; font-size: 75px; border-bottom: 5px solid white; }
 	}
-	.home-callout:after { content: url(assets/img/circle.png); position: relative; display: block; margin-top: 7px; }
+	.home-callout:after { content: url(assets/img/circle.png); position: relative; display: block; margin-top: 7px; z-index: 999; }
 
 }
 
@@ -58,7 +58,20 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 /* Homepage Styles
 ================================================== */
 
+.wrapper { top: 610px; position: absolute; width: 100%; }
 
+#content { background: $yellow;
+	.content-callout { text-align: center; padding: 10%;
+		span { font-family: $nexa-light; font-size: 22px; line-height: 35px; }
+	}
+}
+
+#overview { background: white;
+	.overview-callout { border: 2px solid black; padding: 35px; text-align: center; height: 140px; margin: 20% 0px;
+		.overview-callout-headline { font-family: $gothic; text-transform: uppercase; color: black; font-size: 22px; margin-bottom: 10px; }
+		.overview-callout-body { font-family: $nexa-light; color: black; }
+	}
+}
 
 /* PAGE Styles
 ================================================== */

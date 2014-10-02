@@ -4,4 +4,7 @@ jQuery(document).ready(function($){
 
   try{Typekit.load();}catch(e){}
 
+	$('#overview').parallax("50%", 0.1);
+
+
 });

@@ -22,7 +22,8 @@ module.exports = function (grunt) {
         uglify: {
           js: {
             files: {
-              'assets/prod/<%= pkg.name %>.min.js': ['assets/js/<%= pkg.name %>.js']
+              'assets/prod/<%= pkg.name %>.min.js': ['assets/js/<%= pkg.name %>.js'],
+              'assets/prod/jquery.parallax-1.1.3.min.js': ['assets/js/jquery.parallax-1.1.3.js'],
             }
           }
         },
