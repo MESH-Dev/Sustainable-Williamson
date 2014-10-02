@@ -43,7 +43,6 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 	}
 	.home-callout:after { content: url(assets/img/circle.png); position: relative; display: block; margin-top: 7px; }
 
-
 }
 
 /* Navigation Styles
@@ -69,6 +68,7 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 /* FOOTER Styles
 ================================================== */
 
+footer { background: $lighter-green; width: 100%; }
 
 
 /* #Page Styles

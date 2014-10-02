@@ -79,29 +79,29 @@ $minion:"minion-pro";
 */
 /* #Global Backgrounds
 ================================================== */
-/* line 47, assets/sass/_base.scss */
+/* line 49, assets/sass/_base.scss */
 .light-green-bg {
   background: #a8c48e;
 }
 
-/* line 48, assets/sass/_base.scss */
+/* line 50, assets/sass/_base.scss */
 .blue-bg {
   background: #84c6be;
 }
 
-/* line 49, assets/sass/_base.scss */
+/* line 51, assets/sass/_base.scss */
 .bright-green-bg {
   background: #7ccc79;
 }
 
-/* line 50, assets/sass/_base.scss */
+/* line 52, assets/sass/_base.scss */
 .white-bg {
   background: white;
 }
 
 /* #Basic Styles
 ================================================== */
-/* line 55, assets/sass/_base.scss */
+/* line 57, assets/sass/_base.scss */
 body {
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
@@ -116,7 +116,7 @@ body {
 ================================================== */
 /* #Images
 ================================================== */
-/* line 84, assets/sass/_base.scss */
+/* line 86, assets/sass/_base.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -124,60 +124,60 @@ img {
 
 /* WordPress Image Styles
    ========================================================================== */
-/* line 91, assets/sass/_base.scss */
+/* line 93, assets/sass/_base.scss */
 .alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 92, assets/sass/_base.scss */
+/* line 94, assets/sass/_base.scss */
 .aligncenter, div.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 93, assets/sass/_base.scss */
+/* line 95, assets/sass/_base.scss */
 .alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 94, assets/sass/_base.scss */
+/* line 96, assets/sass/_base.scss */
 .alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 95, assets/sass/_base.scss */
+/* line 97, assets/sass/_base.scss */
 .aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 96, assets/sass/_base.scss */
+/* line 98, assets/sass/_base.scss */
 a img.alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 97, assets/sass/_base.scss */
+/* line 99, assets/sass/_base.scss */
 a img.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 98, assets/sass/_base.scss */
+/* line 100, assets/sass/_base.scss */
 a img.alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 99, assets/sass/_base.scss */
+/* line 101, assets/sass/_base.scss */
 a img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 100, assets/sass/_base.scss */
+/* line 102, assets/sass/_base.scss */
 .wp-caption {
   background: #FFF;
   max-width: 96%;
@@ -185,22 +185,22 @@ a img.aligncenter {
   text-align: center;
 }
 
-/* line 101, assets/sass/_base.scss */
+/* line 103, assets/sass/_base.scss */
 .wp-caption.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 102, assets/sass/_base.scss */
+/* line 104, assets/sass/_base.scss */
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0;
 }
 
-/* line 103, assets/sass/_base.scss */
+/* line 105, assets/sass/_base.scss */
 .wp-caption.alignright {
   margin: 5px 0 20px 20px;
 }
 
-/* line 104, assets/sass/_base.scss */
+/* line 106, assets/sass/_base.scss */
 .wp-caption img {
   border: 0 none;
   height: auto;
@@ -210,7 +210,7 @@ a img.aligncenter {
   width: auto;
 }
 
-/* line 105, assets/sass/_base.scss */
+/* line 107, assets/sass/_base.scss */
 .wp-caption p.wp-caption-text, .gallery-caption {
   font-size: 11px;
   line-height: 17px;
@@ -218,7 +218,7 @@ a img.aligncenter {
   padding: 0 4px 5px;
 }
 
-/* line 108, assets/sass/_base.scss */
+/* line 110, assets/sass/_base.scss */
 .add-bottom {
   margin-bottom: 20px !important;
 }
@@ -1282,6 +1282,12 @@ header .home-callout:after {
 ================================================== */
 /* FOOTER Styles
 ================================================== */
+/* line 71, assets/sass/_layout.scss */
+footer {
+  background: #d4e4bf;
+  width: 100%;
+}
+
 /* #Page Styles
 ================================================== */
 /* #Blog Styles
