@@ -6,7 +6,7 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header>
+<header style="background: url(<?php header_image(); ?>) no-repeat top center fixed;">
   <div class="container">
     <div class="gutter cf">
       <div id="logo">
