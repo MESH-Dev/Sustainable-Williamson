@@ -42,7 +42,7 @@
     <div class="row">
       <div class="two columns">
         <div id="logo">
-          <img src="http://placehold.it/350x150" />
+          <a href="<?php echo get_bloginfo('url'); ?>"><img src="http://placehold.it/350x150" /></a>
         </div>
       </div>
       <div class="ten columns">
@@ -79,3 +79,6 @@
     </div>
   </div>
 </header>
+
+<!-- Open the wrapper -->
+<div class="wrapper">

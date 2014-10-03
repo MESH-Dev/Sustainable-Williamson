@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<div class="wrapper">
-
 <section id="content">
 
   <div class="container">
@@ -55,5 +53,18 @@
     </div>
   </div>
 </section>
+
+<section id="testimonial">
+  <div class="container">
+    <div class="testimonial-callout">
+      <p>"We are dedicated to building a culture of health through holistic community and clinical interventions in order to stimulate a thriving local economy centered around wellness for the entire population."</p>
+    </div>
+  </div>
+</section>
+
+<section id="image" style="background: url(<?php echo get_template_directory_uri(); ?>/assets/img/bg_2.jpg) no-repeat top center fixed; background-size: cover;">
+  <div class="image-holder"></div>
+</section>
+
 
 <?php get_footer(); ?>

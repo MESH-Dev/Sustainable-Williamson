@@ -37,7 +37,8 @@
   </div>
 </footer>
 
-<?php if(is_front_page()) { echo '</div>'; }; ?>
+<!-- Close the wrapper -->
+</div>
 
 <?php wp_footer(); ?>
 </body>
