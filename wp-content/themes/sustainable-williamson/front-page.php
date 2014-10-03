@@ -47,4 +47,13 @@
   </div>
 </section>
 
+<section id="contact">
+  <div class="container">
+    <div class="contact-callout">
+      <p>We serve everyone regardless of your insurance status, including the uninsured individuals covered by Medicaid/Medicare, and people with private health insurance.</p>
+      <p>Please call us to book an appointment.</p>
+    </div>
+  </div>
+</section>
+
 <?php get_footer(); ?>

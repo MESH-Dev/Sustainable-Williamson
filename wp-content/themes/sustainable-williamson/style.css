@@ -1282,7 +1282,7 @@ header .home-callout:after {
 ================================================== */
 /* line 61, assets/sass/_layout.scss */
 .wrapper {
-  top: 610px;
+  top: 575px;
   position: absolute;
   width: 100%;
 }
@@ -1303,10 +1303,6 @@ header .home-callout:after {
   line-height: 35px;
 }
 
-/* line 69, assets/sass/_layout.scss */
-#overview {
-  background: white;
-}
 /* line 70, assets/sass/_layout.scss */
 #overview .overview-callout {
   border: 2px solid black;
@@ -1329,14 +1325,69 @@ header .home-callout:after {
   color: black;
 }
 
+/* line 76, assets/sass/_layout.scss */
+#contact {
+  background: white;
+}
+/* line 77, assets/sass/_layout.scss */
+#contact .contact-callout {
+  text-align: center;
+  padding: 10%;
+}
+/* line 78, assets/sass/_layout.scss */
+#contact .contact-callout p {
+  font-family: nexa_light;
+  font-size: 22px;
+  line-height: 35px;
+}
+
 /* PAGE Styles
 ================================================== */
 /* FOOTER Styles
 ================================================== */
-/* line 84, assets/sass/_layout.scss */
+/* line 90, assets/sass/_layout.scss */
 footer {
   background: #d4e4bf;
   width: 100%;
+}
+/* line 91, assets/sass/_layout.scss */
+footer .footer-content {
+  padding: 30px 0px;
+}
+/* line 93, assets/sass/_layout.scss */
+footer .footer-content .footer-contact p {
+  font-family: nexa_light;
+  color: #515a1c;
+  line-height: 1.5em;
+}
+/* line 95, assets/sass/_layout.scss */
+footer .footer-content .footer-headline {
+  border-bottom: 3px solid white;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+/* line 96, assets/sass/_layout.scss */
+footer .footer-content .footer-headline span {
+  font-family: "league-gothic";
+  text-transform: uppercase;
+  color: #515a1c;
+  font-size: 22px;
+}
+/* line 98, assets/sass/_layout.scss */
+footer .footer-content .footer-body {
+  padding-bottom: 5px;
+}
+/* line 99, assets/sass/_layout.scss */
+footer .footer-content .footer-body p {
+  margin-bottom: 10px;
+}
+/* line 100, assets/sass/_layout.scss */
+footer .footer-content .footer-body p a {
+  font-family: "league-gothic";
+  text-transform: uppercase;
+  color: #515a1c;
+  font-size: 22px;
+  text-decoration: none;
 }
 
 /* #Page Styles
