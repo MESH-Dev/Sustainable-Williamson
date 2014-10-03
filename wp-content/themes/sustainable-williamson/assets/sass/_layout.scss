@@ -57,7 +57,12 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 /* Sidebar
 ================================================== */
 
-.sidebar { float: right !important; }
+.sidebar { float: right !important;
+	.textarea {
+		.textarea-headline { font-family: $gothic; text-transform: uppercase; color: black; font-size: 22px; margin-bottom: 10px; }
+		.textarea-body {  font-family: $nexa-light; color: black; }
+	}
+}
 
 /* Homepage Styles
 ================================================== */
@@ -140,7 +145,7 @@ footer { background: $lighter-green; width: 100%;
 
 */
 
-.btn {  padding: 3% 10%; display: block; border: 2px solid black; color: black; text-align: center;
+.btn {  padding: 3% 10%; display: block; border: 2px solid black; color: black; text-align: center; margin: 10px 0px;
 	.btn-headline { font-family: $gothic; text-transform: uppercase; font-size: 20px; line-height: 30px; }
 	.btn-body { font-family: $nexa-light; }
 }

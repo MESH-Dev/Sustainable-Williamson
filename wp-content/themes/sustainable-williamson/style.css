@@ -320,88 +320,99 @@ blockquote, blockquote p {
   font-family: nexa_light;
   font-size: 34px;
   line-height: 39px;
+  margin: 10px 0px;
 }
 
 /* line 40, assets/sass/_typography.scss */
+blockquote:before {
+  content: "\201C";
+}
+
+/* line 41, assets/sass/_typography.scss */
+blockquote:after {
+  content: "\201D";
+}
+
+/* line 42, assets/sass/_typography.scss */
 blockquote cite {
   font-family: "league-gothic";
   text-transform: uppercase;
 }
 
-/* line 41, assets/sass/_typography.scss */
+/* line 43, assets/sass/_typography.scss */
 blockquote cite:before {
   content: "-";
 }
 
 /* #Links
 ================================================== */
-/* line 50, assets/sass/_typography.scss */
+/* line 52, assets/sass/_typography.scss */
 a {
   text-decoration: none;
   color: #84c6be;
 }
 
-/* line 51, assets/sass/_typography.scss */
+/* line 53, assets/sass/_typography.scss */
 a:hover, a:focus {
   color: #7ccc79;
 }
 
-/* line 52, assets/sass/_typography.scss */
+/* line 54, assets/sass/_typography.scss */
 p a, p a:visited {
   color: #515a1c;
 }
 
 /* #Lists
 ================================================== */
-/* line 57, assets/sass/_typography.scss */
+/* line 59, assets/sass/_typography.scss */
 ul, ol {
   margin-bottom: 0px;
 }
 
-/* line 58, assets/sass/_typography.scss */
+/* line 60, assets/sass/_typography.scss */
 ul {
   list-style: circle outside;
 }
 
-/* line 59, assets/sass/_typography.scss */
+/* line 61, assets/sass/_typography.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 60, assets/sass/_typography.scss */
+/* line 62, assets/sass/_typography.scss */
 ol, ul, ul.square, ul.circle, ul.disc {
   margin-left: 30px;
 }
 
-/* line 61, assets/sass/_typography.scss */
+/* line 63, assets/sass/_typography.scss */
 ul.square {
   list-style: square outside;
 }
 
-/* line 62, assets/sass/_typography.scss */
+/* line 64, assets/sass/_typography.scss */
 ul.circle {
   list-style: circle outside;
 }
 
-/* line 63, assets/sass/_typography.scss */
+/* line 65, assets/sass/_typography.scss */
 ul.disc {
   list-style: disc outside;
 }
 
-/* line 64, assets/sass/_typography.scss */
+/* line 66, assets/sass/_typography.scss */
 ul ul, ul ol,
 ol ol, ol ul {
   margin: 0px 0 0px 20px;
   font-size: 100%;
 }
 
-/* line 66, assets/sass/_typography.scss */
+/* line 68, assets/sass/_typography.scss */
 ul ul li, ul ol li,
 ol ol li, ol ul li {
   margin-bottom: 0px;
 }
 
-/* line 68, assets/sass/_typography.scss */
+/* line 70, assets/sass/_typography.scss */
 li {
   line-height: 26px;
   margin-bottom: 0px;
@@ -1372,37 +1383,50 @@ header .home-callout:after {
 .sidebar {
   float: right !important;
 }
+/* line 62, assets/sass/_layout.scss */
+.sidebar .textarea .textarea-headline {
+  font-family: "league-gothic";
+  text-transform: uppercase;
+  color: black;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+/* line 63, assets/sass/_layout.scss */
+.sidebar .textarea .textarea-body {
+  font-family: nexa_light;
+  color: black;
+}
 
 /* Homepage Styles
 ================================================== */
-/* line 65, assets/sass/_layout.scss */
+/* line 70, assets/sass/_layout.scss */
 .wrapper {
   top: 648px;
   position: absolute;
   width: 100%;
 }
 
-/* line 67, assets/sass/_layout.scss */
+/* line 72, assets/sass/_layout.scss */
 #content {
   background: #f8ee8f;
 }
-/* line 68, assets/sass/_layout.scss */
+/* line 73, assets/sass/_layout.scss */
 #content .content-callout {
   text-align: center;
   padding: 10%;
 }
-/* line 69, assets/sass/_layout.scss */
+/* line 74, assets/sass/_layout.scss */
 #content .content-callout span {
   font-family: nexa_light;
   font-size: 22px;
   line-height: 35px;
 }
-/* line 71, assets/sass/_layout.scss */
+/* line 76, assets/sass/_layout.scss */
 #content .content-holder {
   height: 90px;
 }
 
-/* line 75, assets/sass/_layout.scss */
+/* line 80, assets/sass/_layout.scss */
 #overview .overview-callout {
   border: 2px solid black;
   padding: 35px;
@@ -1410,7 +1434,7 @@ header .home-callout:after {
   height: 140px;
   margin: 20% 0px;
 }
-/* line 76, assets/sass/_layout.scss */
+/* line 81, assets/sass/_layout.scss */
 #overview .overview-callout .overview-callout-headline {
   font-family: "league-gothic";
   text-transform: uppercase;
@@ -1418,95 +1442,95 @@ header .home-callout:after {
   font-size: 22px;
   margin-bottom: 10px;
 }
-/* line 77, assets/sass/_layout.scss */
+/* line 82, assets/sass/_layout.scss */
 #overview .overview-callout .overview-callout-body {
   font-family: nexa_light;
   color: black;
 }
 
-/* line 81, assets/sass/_layout.scss */
+/* line 86, assets/sass/_layout.scss */
 #contact {
   background: white;
 }
-/* line 82, assets/sass/_layout.scss */
+/* line 87, assets/sass/_layout.scss */
 #contact .contact-callout {
   text-align: center;
   padding: 10%;
 }
-/* line 83, assets/sass/_layout.scss */
+/* line 88, assets/sass/_layout.scss */
 #contact .contact-callout p {
   font-family: nexa_light;
   font-size: 22px;
   line-height: 35px;
 }
 
-/* line 87, assets/sass/_layout.scss */
+/* line 92, assets/sass/_layout.scss */
 #testimonial {
   background: #f8ee8f;
 }
-/* line 88, assets/sass/_layout.scss */
+/* line 93, assets/sass/_layout.scss */
 #testimonial .testimonial-callout {
   text-align: center;
   padding: 10%;
 }
-/* line 89, assets/sass/_layout.scss */
+/* line 94, assets/sass/_layout.scss */
 #testimonial .testimonial-callout p {
   font-family: nexa_light;
   font-size: 22px;
   line-height: 35px;
 }
 
-/* line 94, assets/sass/_layout.scss */
+/* line 99, assets/sass/_layout.scss */
 #image .image-holder {
   height: 180px;
 }
 
 /* PAGE Styles
 ================================================== */
-/* line 100, assets/sass/_layout.scss */
+/* line 105, assets/sass/_layout.scss */
 #page-content {
   padding-top: 30px;
 }
 
 /* FOOTER Styles
 ================================================== */
-/* line 108, assets/sass/_layout.scss */
+/* line 113, assets/sass/_layout.scss */
 footer {
   background: #d4e4bf;
   width: 100%;
 }
-/* line 109, assets/sass/_layout.scss */
+/* line 114, assets/sass/_layout.scss */
 footer .footer-content {
   padding: 30px 0px;
 }
-/* line 111, assets/sass/_layout.scss */
+/* line 116, assets/sass/_layout.scss */
 footer .footer-content .footer-contact p {
   font-family: nexa_light;
   color: #515a1c;
   line-height: 1.5em;
 }
-/* line 113, assets/sass/_layout.scss */
+/* line 118, assets/sass/_layout.scss */
 footer .footer-content .footer-headline {
   border-bottom: 3px solid white;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
-/* line 114, assets/sass/_layout.scss */
+/* line 119, assets/sass/_layout.scss */
 footer .footer-content .footer-headline span {
   font-family: "league-gothic";
   text-transform: uppercase;
   color: #515a1c;
   font-size: 22px;
 }
-/* line 116, assets/sass/_layout.scss */
+/* line 121, assets/sass/_layout.scss */
 footer .footer-content .footer-body {
   padding-bottom: 5px;
 }
-/* line 117, assets/sass/_layout.scss */
+/* line 122, assets/sass/_layout.scss */
 footer .footer-content .footer-body p {
   margin-bottom: 10px;
 }
-/* line 118, assets/sass/_layout.scss */
+/* line 123, assets/sass/_layout.scss */
 footer .footer-content .footer-body p a {
   font-family: "league-gothic";
   text-transform: uppercase;
@@ -1531,27 +1555,28 @@ footer .footer-content .footer-body p a {
 </a>
 
 */
-/* line 143, assets/sass/_layout.scss */
+/* line 148, assets/sass/_layout.scss */
 .btn {
   padding: 3% 10%;
   display: block;
   border: 2px solid black;
   color: black;
   text-align: center;
+  margin: 10px 0px;
 }
-/* line 144, assets/sass/_layout.scss */
+/* line 149, assets/sass/_layout.scss */
 .btn .btn-headline {
   font-family: "league-gothic";
   text-transform: uppercase;
   font-size: 20px;
   line-height: 30px;
 }
-/* line 145, assets/sass/_layout.scss */
+/* line 150, assets/sass/_layout.scss */
 .btn .btn-body {
   font-family: nexa_light;
 }
 
-/* line 147, assets/sass/_layout.scss */
+/* line 152, assets/sass/_layout.scss */
 .btn:hover {
   background-color: black;
   color: white;

@@ -36,7 +36,9 @@
 
 
 	//blockquote
-	blockquote, blockquote p { font-family: $nexa-light; font-size: 34px; line-height: 39px; }
+	blockquote, blockquote p { font-family: $nexa-light; font-size: 34px; line-height: 39px; margin: 10px 0px; }
+	blockquote:before { content: "\201C";}
+	blockquote:after { content: "\201D";}
 	blockquote cite { font-family: $gothic; text-transform: uppercase; }
 	blockquote cite:before { content: "-"; }
 	blockquote cite a, blockquote cite a:visited {}
