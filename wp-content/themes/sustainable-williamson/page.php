@@ -9,7 +9,21 @@
   <section id="page-content">
     <div class="container">
       <div class="eight columns">
+
+
         <?php the_content(); ?>
+
+        <?php if(get_field('content_left')) { ?>
+          <div class="four columns page-content-block">
+            <?php the_field('content_left'); ?>
+          </div>
+        <?php } ?>
+
+        <?php if(get_field('content_right')) { ?>
+          <div class="four columns page-content-block">
+            <?php the_field('content_right'); ?>
+          </div>
+        <?php } ?>
 
       </div>
       <div class="four columns sidebar">
@@ -18,17 +32,6 @@
 
       </div>
 
-      <?php if(get_field('content_left')) { ?>
-        <div class="four columns">
-          <?php the_field('content_left'); ?>
-        </div>
-      <?php } ?>
-
-      <?php if(get_field('content_right')) { ?>
-        <div class="four columns">
-          <?php the_field('content_right'); ?>
-        </div>
-      <?php } ?>
     </div>
   </section>
 <?php } } ?>
