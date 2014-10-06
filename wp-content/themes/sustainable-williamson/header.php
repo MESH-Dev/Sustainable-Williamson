@@ -6,7 +6,7 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header style="background: url(<?php header_image(); ?>) no-repeat top center fixed; background-size: cover;">
+<header style="background: url(<?php the_field('header_image') ?>) no-repeat top center fixed; background-size: cover;">
   <div class="row">
     <div class="top-third light-green-bg">
       <div class="top-third-text">
@@ -33,7 +33,7 @@
         <span>Breathing life back into Appalachia</span>
 
         <!-- Add the logo image here -->
-        <img src="" />
+        <img src="<?php echo get_template_directory_uri() ?>/assets/img/Williamson_seal_logo.png" />
 
       </div>
     </div>
@@ -42,7 +42,7 @@
     <div class="row">
       <div class="two columns">
         <div id="logo">
-          <a href="<?php echo get_bloginfo('url'); ?>"><img src="http://placehold.it/350x150" /></a>
+          <a href="<?php echo get_bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri() ?>/assets/img/WHWC_main_logo.png" /></a>
         </div>
       </div>
       <div class="ten columns">
@@ -74,7 +74,11 @@
     </div>
     <div class="row">
       <div class="home-callout">
-        <span>Building a culture of health for everyone</span>
+        <?php if(is_front_page()){ ?>
+          <span><?php the_field('headline'); ?></span>
+        <?php } else { ?>
+          <span><?php echo get_the_title(); ?></span>
+        <?php } ?>
       </div>
     </div>
   </div>

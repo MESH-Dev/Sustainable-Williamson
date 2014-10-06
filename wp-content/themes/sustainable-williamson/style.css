@@ -325,12 +325,18 @@ blockquote, blockquote p {
 
 /* line 40, assets/sass/_typography.scss */
 blockquote:before {
-  content: "\201C";
+  content: url("assets/img/left_blockquote.png");
+  position: relative;
+  top: -15px;
+  left: -15px;
 }
 
 /* line 41, assets/sass/_typography.scss */
 blockquote:after {
-  content: "\201D";
+  content: url("assets/img/right_blockquote.png");
+  position: relative;
+  bottom: -15px;
+  right: -15px;
 }
 
 /* line 42, assets/sass/_typography.scss */
@@ -1299,6 +1305,7 @@ header #logo {
   float: right;
   overflow: visible;
   position: relative;
+  margin-top: 20px;
 }
 /* line 21, assets/sass/_layout.scss */
 header #logo img {
@@ -1339,6 +1346,7 @@ header .angle-left {
   float: left;
   color: black;
   font-size: 25px;
+  cursor: pointer;
 }
 /* line 35, assets/sass/_layout.scss */
 header .content-right {
@@ -1350,13 +1358,20 @@ header .content-right span {
   color: black;
   font-family: nexa_bold;
   font-size: 15px;
+  margin-right: 65px;
 }
-/* line 41, assets/sass/_layout.scss */
-header .home-callout {
-  margin-top: 16%;
-  z-index: 999;
+/* line 37, assets/sass/_layout.scss */
+header .content-right img {
+  position: absolute;
+  top: -8px;
+  right: 0px;
 }
 /* line 42, assets/sass/_layout.scss */
+header .home-callout {
+  margin-top: 205px;
+  z-index: 999;
+}
+/* line 43, assets/sass/_layout.scss */
 header .home-callout span {
   color: white;
   text-transform: uppercase;
@@ -1364,9 +1379,9 @@ header .home-callout span {
   font-size: 75px;
   border-bottom: 5px solid white;
 }
-/* line 44, assets/sass/_layout.scss */
+/* line 45, assets/sass/_layout.scss */
 header .home-callout:after {
-  content: url(assets/img/circle.png);
+  content: url(assets/img/circle_and_line.png);
   position: relative;
   display: block;
   margin-top: 13px;
@@ -1379,11 +1394,15 @@ header .home-callout:after {
 ================================================== */
 /* Sidebar
 ================================================== */
-/* line 60, assets/sass/_layout.scss */
+/* line 61, assets/sass/_layout.scss */
 .sidebar {
   float: right !important;
 }
 /* line 62, assets/sass/_layout.scss */
+.sidebar .textarea {
+  margin: 30px auto;
+}
+/* line 63, assets/sass/_layout.scss */
 .sidebar .textarea .textarea-headline {
   font-family: "league-gothic";
   text-transform: uppercase;
@@ -1391,42 +1410,46 @@ header .home-callout:after {
   font-size: 22px;
   margin-bottom: 10px;
 }
-/* line 63, assets/sass/_layout.scss */
+/* line 64, assets/sass/_layout.scss */
 .sidebar .textarea .textarea-body {
   font-family: nexa_light;
   color: black;
 }
+/* line 67, assets/sass/_layout.scss */
+.sidebar blockquote {
+  margin: 30px 0px;
+}
 
 /* Homepage Styles
 ================================================== */
-/* line 70, assets/sass/_layout.scss */
+/* line 73, assets/sass/_layout.scss */
 .wrapper {
-  top: 648px;
+  top: 575px;
   position: absolute;
   width: 100%;
 }
 
-/* line 72, assets/sass/_layout.scss */
+/* line 75, assets/sass/_layout.scss */
 #content {
   background: #f8ee8f;
 }
-/* line 73, assets/sass/_layout.scss */
+/* line 76, assets/sass/_layout.scss */
 #content .content-callout {
   text-align: center;
-  padding: 10%;
+  padding: 10% 16%;
 }
-/* line 74, assets/sass/_layout.scss */
+/* line 77, assets/sass/_layout.scss */
 #content .content-callout span {
   font-family: nexa_light;
   font-size: 22px;
   line-height: 35px;
 }
-/* line 76, assets/sass/_layout.scss */
+/* line 79, assets/sass/_layout.scss */
 #content .content-holder {
   height: 90px;
 }
 
-/* line 80, assets/sass/_layout.scss */
+/* line 83, assets/sass/_layout.scss */
 #overview .overview-callout {
   border: 2px solid black;
   padding: 35px;
@@ -1434,7 +1457,7 @@ header .home-callout:after {
   height: 140px;
   margin: 20% 0px;
 }
-/* line 81, assets/sass/_layout.scss */
+/* line 84, assets/sass/_layout.scss */
 #overview .overview-callout .overview-callout-headline {
   font-family: "league-gothic";
   text-transform: uppercase;
@@ -1442,99 +1465,103 @@ header .home-callout:after {
   font-size: 22px;
   margin-bottom: 10px;
 }
-/* line 82, assets/sass/_layout.scss */
+/* line 85, assets/sass/_layout.scss */
 #overview .overview-callout .overview-callout-body {
   font-family: nexa_light;
   color: black;
 }
 
-/* line 86, assets/sass/_layout.scss */
+/* line 89, assets/sass/_layout.scss */
 #contact {
   background: white;
 }
-/* line 87, assets/sass/_layout.scss */
+/* line 90, assets/sass/_layout.scss */
 #contact .contact-callout {
   text-align: center;
-  padding: 10%;
+  padding: 50px 10% 10px;
 }
-/* line 88, assets/sass/_layout.scss */
+/* line 91, assets/sass/_layout.scss */
 #contact .contact-callout p {
   font-family: nexa_light;
   font-size: 22px;
   line-height: 35px;
 }
 
-/* line 92, assets/sass/_layout.scss */
+/* line 95, assets/sass/_layout.scss */
 #testimonial {
   background: #f8ee8f;
 }
-/* line 93, assets/sass/_layout.scss */
+/* line 96, assets/sass/_layout.scss */
 #testimonial .testimonial-callout {
   text-align: center;
   padding: 10%;
 }
-/* line 94, assets/sass/_layout.scss */
-#testimonial .testimonial-callout p {
-  font-family: nexa_light;
+/* line 97, assets/sass/_layout.scss */
+#testimonial .testimonial-callout span {
+  font-family: "league-gothic";
+  text-transform: uppercase;
   font-size: 22px;
-  line-height: 35px;
 }
 
-/* line 99, assets/sass/_layout.scss */
+/* line 102, assets/sass/_layout.scss */
 #image .image-holder {
   height: 180px;
 }
 
 /* PAGE Styles
 ================================================== */
-/* line 105, assets/sass/_layout.scss */
+/* line 108, assets/sass/_layout.scss */
 #page-content {
   padding-top: 30px;
 }
-/* line 106, assets/sass/_layout.scss */
+/* line 109, assets/sass/_layout.scss */
 #page-content .page-content-block {
   margin-left: 0px;
 }
 
 /* FOOTER Styles
 ================================================== */
-/* line 113, assets/sass/_layout.scss */
+/* line 116, assets/sass/_layout.scss */
 footer {
   background: #d4e4bf;
   width: 100%;
 }
-/* line 114, assets/sass/_layout.scss */
+/* line 117, assets/sass/_layout.scss */
 footer .footer-content {
   padding: 30px 0px;
 }
-/* line 116, assets/sass/_layout.scss */
+/* line 118, assets/sass/_layout.scss */
+footer .footer-content .footer-logo {
+  margin-bottom: 10px;
+}
+/* line 120, assets/sass/_layout.scss */
 footer .footer-content .footer-contact p {
   font-family: nexa_light;
   color: #515a1c;
   line-height: 1.5em;
 }
-/* line 118, assets/sass/_layout.scss */
+/* line 122, assets/sass/_layout.scss */
 footer .footer-content .footer-headline {
   border-bottom: 3px solid white;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
-/* line 119, assets/sass/_layout.scss */
+/* line 123, assets/sass/_layout.scss */
 footer .footer-content .footer-headline span {
   font-family: "league-gothic";
   text-transform: uppercase;
   color: #515a1c;
   font-size: 22px;
 }
-/* line 121, assets/sass/_layout.scss */
+/* line 125, assets/sass/_layout.scss */
 footer .footer-content .footer-body {
   padding-bottom: 5px;
 }
-/* line 122, assets/sass/_layout.scss */
+/* line 126, assets/sass/_layout.scss */
 footer .footer-content .footer-body p {
   margin-bottom: 10px;
 }
-/* line 123, assets/sass/_layout.scss */
+/* line 127, assets/sass/_layout.scss */
 footer .footer-content .footer-body p a {
   font-family: "league-gothic";
   text-transform: uppercase;
@@ -1559,28 +1586,33 @@ footer .footer-content .footer-body p a {
 </a>
 
 */
-/* line 148, assets/sass/_layout.scss */
+/* line 152, assets/sass/_layout.scss */
+.btn-home {
+  margin-bottom: 50px !important;
+}
+
+/* line 154, assets/sass/_layout.scss */
 .btn {
-  padding: 3% 10%;
+  padding: 1% 10%;
   display: block;
   border: 2px solid black;
   color: black;
   text-align: center;
-  margin: 10px 0px;
+  margin: 30px auto;
 }
-/* line 149, assets/sass/_layout.scss */
+/* line 155, assets/sass/_layout.scss */
 .btn .btn-headline {
   font-family: "league-gothic";
   text-transform: uppercase;
   font-size: 20px;
   line-height: 30px;
 }
-/* line 150, assets/sass/_layout.scss */
+/* line 156, assets/sass/_layout.scss */
 .btn .btn-body {
   font-family: nexa_light;
 }
 
-/* line 152, assets/sass/_layout.scss */
+/* line 158, assets/sass/_layout.scss */
 .btn:hover {
   background-color: black;
   color: white;

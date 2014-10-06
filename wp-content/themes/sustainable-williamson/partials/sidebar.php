@@ -1,93 +1,59 @@
 <?php
 
-// check if the repeater field has rows of data
-if( have_rows('buttons') ):
+$sidebarItems = get_field('sidebar');
+// check for rows (parent repeater)
+if( have_rows('sidebar') ):
 
-   // loop through the rows of data
-    while ( have_rows('buttons') ) : the_row();
+  foreach($sidebarItems as $sidebarItem) {
 
-        // display a sub field value
-
-      ?>
-
-        <a href="<?php the_sub_field('button_url'); ?>">
-          <div class="btn">
-            <div class="btn-headline">
-              <span><?php the_sub_field('button_headline'); ?></span>
-            </div>
-            <?php if (get_sub_field('button_body')) { ?>
-              <div class="btn-body">
-                <span><?php the_sub_field('button_body'); ?></span>
-              </div>
-            <?php } ?>
-          </div>
-        </a>
-
-      <?php
-
-    endwhile;
-
-else :
-
-    // no rows found
-
-endif;
-
-?>
-
-<?php
-
-// check if the repeater field has rows of data
-if( have_rows('blockquotes') ):
-
-   // loop through the rows of data
-    while ( have_rows('blockquotes') ) : the_row();
-
-        // display a sub field value
-
-      ?>
+    if($sidebarItem['field_type'] == 'blockquote') {
+      foreach($sidebarItem['sidebar_blockquote'] as $sidebarBlockquote) {
+        ?>
         <blockquote>
-          <?php the_sub_field('blockquote_text'); ?>
+          <?php echo $sidebarBlockquote['sidebar_blockquote_text']; ?>
         </blockquote>
-      <?php
+        <?php
+      }
+    }
 
-    endwhile;
+    if($sidebarItem['field_type'] == 'button') {
+      foreach($sidebarItem['sidebar_button'] as $sidebarButton) {
+        ?>
 
-else :
+          <a href="<?php echo $sidebarButton['sidebar_button_url']; ?>">
+            <div class="btn">
+              <div class="btn-headline">
+                <span><?php echo $sidebarButton['sidebar_button_headline']; ?></span>
+              </div>
+              <?php if (strlen($sidebarButton['sidebar_button_body']) > 0) { ?>
+                <div class="btn-body">
+                  <span><?php echo $sidebarButton['sidebar_button_body']; ?></span>
+                </div>
+              <?php } ?>
+            </div>
+          </a>
 
-    // no rows found
+        <?php
+      }
+    }
 
-endif;
+    if($sidebarItem['field_type'] == 'textarea') {
+      foreach($sidebarItem['sidebar_textarea'] as $sidebarTextarea) {
+        ?>
 
-?>
-
-<?php
-
-// check if the repeater field has rows of data
-if( have_rows('textareas') ):
-
-   // loop through the rows of data
-    while ( have_rows('textareas') ) : the_row();
-
-        // display a sub field value
-
-      ?>
-        <div class="textarea">
-          <div class="textarea-headline">
-            <span><?php the_sub_field('textarea_headline'); ?></span>
+          <div class="textarea">
+            <div class="textarea-headline">
+              <span><?php echo $sidebarTextarea['sidebar_textarea_headline']; ?></span>
+            </div>
+            <div class="textarea-body">
+              <span><?php echo $sidebarTextarea['sidebar_textarea_body']; ?></span>
+            </div>
           </div>
-          <div class="textarea-body">
-            <span><?php the_sub_field('textarea_body'); ?></span>
-          </div>
-        </div>
-      <?php
 
-    endwhile;
+        <?php
+      }
+    }
 
-else :
+  }
 
-    // no rows found
-
-endif;
-
-?>
+endif; ?>

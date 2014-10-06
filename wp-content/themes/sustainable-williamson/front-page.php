@@ -4,65 +4,82 @@
 
   <div class="container">
     <div class="content-callout">
-      <span>We are dedicated to building a culture of health through holistic community and clinical interventions in order to stimulate a thriving local economy centered around wellness for the entire population.</span>
+      <span><?php the_field('first_callout') ?></span>
     </div>
   </div>
 
 </section>
 
-<section id="overview" style="background: url(<?php echo get_template_directory_uri(); ?>/assets/img/bg_2.jpg) no-repeat top center fixed; background-size: cover;">
+<section id="overview" style="background: url(<?php the_field('background_image_1'); ?>) no-repeat top center fixed; background-size: cover;">
   <div class="container">
-    <div class="four columns">
-      <div class="overview-callout">
-        <div class="overview-callout-headline">
-          <span>Our Services</span>
-        </div>
-        <div class="overview-callout-body">
-          <span>We offer Adult and Pediatric Medicine, Behavioral Health, and Dental Services.</span>
-        </div>
-      </div>
-    </div>
-    <div class="four columns">
-      <div class="overview-callout">
-        <div class="overview-callout-headline">
-          <span>Who We Serve</span>
-        </div>
-        <div class="overview-callout-body">
-          <span>Everyone deserves access to quality care. We offer a sliding fee scale and serve patients and those covered by Medicaid, Medicare, and private insurance.</span>
-        </div>
-      </div>
-    </div>
-    <div class="four columns">
-      <div class="overview-callout">
-        <div class="overview-callout-headline">
-          <span>Our Staff</span>
-        </div>
-        <div class="overview-callout-body">
-          <span>We employ a highly qualified provider team to ensure every patient is provided patient-centered, holistic health care. your health is our highest priority.</span>
-        </div>
-      </div>
-    </div>
+
+    <?php
+
+    // check if the repeater field has rows of data
+    if( have_rows('textboxes') ):
+
+     	// loop through the rows of data
+        while ( have_rows('textboxes') ) : the_row();
+
+            // display a sub field value
+            ?>
+
+            <div class="four columns">
+              <div class="overview-callout">
+                <div class="overview-callout-headline">
+                  <span><?php the_sub_field('textbox_headline'); ?></span>
+                </div>
+                <div class="overview-callout-body">
+                  <span><?php the_sub_field('textbox_body'); ?></span>
+                </div>
+              </div>
+            </div>
+
+            <?php
+
+        endwhile;
+
+    else :
+
+        // no rows found
+
+    endif;
+
+    ?>
+
   </div>
 </section>
 
 <section id="contact">
   <div class="container">
     <div class="contact-callout">
-      <p>We serve everyone regardless of your insurance status, including the uninsured individuals covered by Medicaid/Medicare, and people with private health insurance.</p>
-      <p>Please call us to book an appointment.</p>
+      <p><?php the_field('second_callout'); ?></p>
     </div>
+
+    <div class="four columns offset-by-four">
+      <a href="<?php the_field('second_callout_button_link'); ?>">
+        <div class="btn btn-home">
+          <div class="btn-headline">
+            <span><?php the_field('second_callout_button_text'); ?></span>
+          </div>
+        </div>
+      </a>
+    </div>
+
   </div>
 </section>
 
 <section id="testimonial">
   <div class="container">
     <div class="testimonial-callout">
-      <p>"We are dedicated to building a culture of health through holistic community and clinical interventions in order to stimulate a thriving local economy centered around wellness for the entire population."</p>
+      <blockquote><?php the_field('testimonial'); ?></blockquote>
+      <br/>
+      <span>&mdash; <?php the_field('testimonial_author'); ?></span>
     </div>
   </div>
 </section>
 
-<section id="image" style="background: url(<?php echo get_template_directory_uri(); ?>/assets/img/bg_2.jpg) no-repeat top center fixed; background-size: cover;">
+<section id="image" style="background: url(<?php the_field('background_image_2'); ?>) no-repeat top center fixed; background-size: cover;">
   <div class="image-holder"></div>
 </section>
 

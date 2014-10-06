@@ -3,7 +3,7 @@
     <div class="four columns">
       <div class="footer-content">
         <div class="footer-logo">
-          <img src="http://placehold.it/350x150" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/WHWC_green_logo.png" />
         </div>
         <div class="footer-contact">
           <p>184 East 2nd Ave. Suite 201<br/>
