@@ -1,12 +1,15 @@
 <?php
   //enqueue scripts and styles *use production assets. Dev assets are located in assets/css and assets/js
   function WPS_scripts() {
+
   	wp_enqueue_style( 'style-sw', get_template_directory_uri().'/style.css');
     wp_enqueue_script('script-parallax',get_template_directory_uri().'/assets/prod/jquery.parallax-1.1.3.min.js', array('jquery'), '1.0.0', true);
   	wp_enqueue_script( 'script-sw', get_template_directory_uri().'/assets/prod/sw.min.js', array('jquery'), '1.0.0', true );
     wp_enqueue_script('typekit',"//use.typekit.net/gka0dvw.js");
 
     wp_enqueue_style('font-awesome',get_template_directory_uri().'/assets/libs/font-awesome-4.1.0/css/font-awesome.min.css');
+
+    wp_enqueue_script('jquery-ui',"//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js");
   }
   add_action( 'wp_enqueue_scripts', 'WPS_scripts' );
 
