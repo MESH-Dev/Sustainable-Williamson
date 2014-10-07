@@ -116,7 +116,7 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 ================================================== */
 
 .sidebar { float: right !important;
-	.textarea { margin: 30px auto;
+	.textarea { margin: 0px auto 30px;
 		.textarea-headline { font-family: $gothic; text-transform: uppercase; color: black; font-size: 22px; margin-bottom: 10px; }
 		.textarea-body {  font-family: $nexa-light; color: black; }
 	}
@@ -127,7 +127,7 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 /* Homepage Styles
 ================================================== */
 
-.wrapper { top: 575px; position: absolute; width: 100%; }
+.wrapper { top: 575px; position: absolute; width: 100%; background: white; }
 
 #content { background: $yellow;
 	.content-callout { text-align: center; padding: 60px 16%;
@@ -171,6 +171,12 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 	.page-content-block { margin-left: 0px; }
 }
 
+/* Contact Styles
+================================================== */
+
+#wpgmza_map {
+	margin-bottom: 30px;
+}
 
 /* FOOTER Styles
 ================================================== */
