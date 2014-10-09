@@ -44,7 +44,7 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 		}
 	}
 
-	#menu { display: none; float: right; color: $light-green; margin-top: 40px; cursor: pointer;
+	#menu { display: none; float: right; color: $yellow; margin-top: 40px; cursor: pointer;
 		@include breakpoint(landscape) { display: inline-block; }
 		@include breakpoint(portrait) { display: inline-block; }
 	}
@@ -62,7 +62,7 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 		@include breakpoint(portrait) { display: none; }
 	}
 
-	#responsiveNav { display: none; float: left; background: $light-green; padding: 10px; position: absolute; top: 195px; z-index: 999; left: 0px;
+	#responsiveNav { display: none; float: left; background: $light-green; padding: 10px; position: absolute; top: 195px; z-index: 999; right: 0px;
 		ul { list-style: none; margin-left: 0px;
 			li { text-transform: uppercase; padding: 5px 10px; text-align: left;
 				a { color: $yellow; font-family: $gothic; font-size: 26px; text-decoration: none; }

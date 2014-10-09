@@ -1482,7 +1482,7 @@ header #logo img {
 header #menu {
   display: none;
   float: right;
-  color: #a8c48e;
+  color: #f8ee8f;
   margin-top: 40px;
   cursor: pointer;
 }
@@ -1555,7 +1555,7 @@ header #responsiveNav {
   position: absolute;
   top: 195px;
   z-index: 999;
-  left: 0px;
+  right: 0px;
 }
 /* line 66, assets/sass/_layout.scss */
 header #responsiveNav ul {
