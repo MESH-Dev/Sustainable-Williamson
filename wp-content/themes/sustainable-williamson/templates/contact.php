@@ -17,7 +17,6 @@
   <div class="container">
     <div class="eight columns">
 
-
       <?php echo do_shortcode( '[wpgmza id="1"]' ) ?>
 
       <h3>Contact Us</h3>

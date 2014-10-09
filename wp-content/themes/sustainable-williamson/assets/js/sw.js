@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
   // Slide out responsive navigation
 
   $('#menu').click(function() {
-    $('#responsiveNav').toggle('slide', {direction:'left'}, 300);
+    $('#responsiveNav').toggle('slide', {direction:'right'}, 300);
   });
 
 });
