@@ -10,7 +10,7 @@
 header { background-position: top center; width: 100%; height: 700px; position: absolute; overflow: hidden; text-align: center; color: #fff;
 	.nav-bar { margin-top: -35px; position: relative; transition: 0.2s all; -webkit-transition: 0.2s all; -moz-transition: 0.2s all; -ms-transition: 0.2s all; -o-transition: 0.2s all;
 		@include breakpoint(landscape) { margin-top: -15px; }
-		@include breakpoint(portrait) { margin-top: -15px; }
+		@include breakpoint(portrait) { margin-top: 0px; }
 	}
 
 	.top-third { width: $one_third; float: left; min-height: 75px;
@@ -36,9 +36,11 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 
 	// first row
 	#logo { float: right; overflow: visible; position: relative; margin-top: 20px;
+		@include breakpoint(smallscreen) { float: left; }
 		@include breakpoint(landscape) { float: left; }
 		@include breakpoint(portrait) { float: left; }
 		img { max-width: none;
+			@include breakpoint(smallscreen) { width: 215px; margin-top: 20px; }
 			@include breakpoint(landscape) { width: 215px; margin-top: 20px; }
 			@include breakpoint(portrait) { width: 215px; margin-top: 20px; }
 		}
@@ -50,9 +52,12 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 	}
 
 	#mainNav { float: right; margin: 25px 0px;
+		@include breakpoint(smallscreen) { margin: 40px 0px; }
 		ul { list-style: none; margin-left: none; float: right;
 			li { text-transform: uppercase; display: inline; padding: 0px 10px;
-				a { color: $yellow; font-family: $gothic; font-size: 26px; text-decoration: none; }
+				a { color: $yellow; font-family: $gothic; font-size: 26px; text-decoration: none;
+					@include breakpoint(smallscreen) { font-size: 18px; }
+				}
 				a:hover { opacity: 0.8; }
 			}
 			li:last-child { padding-right: 0px; }
@@ -87,8 +92,8 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 	// third row
 
 	.home-callout { margin-top: 235px; z-index: 999;
-		@include breakpoint(smallscreen) { margin-top: 225px; }
-		@include breakpoint(landscape) { margin-top: 240px; }
+		@include breakpoint(smallscreen) { margin-top: 245px; }
+		@include breakpoint(landscape) { margin-top: 245px; }
 		@include breakpoint(portrait) { margin-top: 265px; }
 		span { color: white; text-transform: uppercase; font-family: $gothic; font-size: 75px; border-bottom: 5px solid white;
 			@include breakpoint(smallscreen) { font-size: 60px; }
