@@ -55,7 +55,7 @@
 
   //footer attribution
   function WPS_footer_admin () {
-	   echo 'Theme developed by <a href="http://pateason.com">Pat Eason</a>.';
+	   echo 'Theme developed by MESH.';
   } add_filter('admin_footer_text', 'WPS_footer_admin');
 
   //disable code editors
