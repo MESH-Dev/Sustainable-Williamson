@@ -17,7 +17,7 @@
 $sk-col-width:  50px;   //column width
 $sk-col-gutter: 30px;   //column gutter size
 $sk-col-count:  12;     //total column count
-$sk-tablet-col: 38px;   //column width for tablet portrait
+$sk-tablet-col: 36px;   //column width for tablet portrait
 
 @mixin grid-width($col-width: $sk-col-width) {
     width: ($col-width * $sk-col-count) + ($sk-col-gutter * ($sk-col-count));
