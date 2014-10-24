@@ -6,7 +6,7 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header style="background: url(<?php the_field('header_image') ?>) no-repeat top center fixed; background-size: cover;">
+<header style="background: url(<?php the_field('header_image') ?>) no-repeat top center fixed; background-size: cover; background-attachment: scroll;">
   <div class="row">
     <div class="nav-bar">
       <a href="https://www.google.com">
