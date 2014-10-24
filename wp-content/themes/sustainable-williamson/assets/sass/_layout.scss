@@ -89,7 +89,7 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 	.home-callout { margin-top: 235px; z-index: 999;
 		@include breakpoint(smallscreen) { margin-top: 225px; }
 		@include breakpoint(landscape) { margin-top: 240px; }
-		@include breakpoint(portrait) { margin-top: 240px; }
+		@include breakpoint(portrait) { margin-top: 265px; }
 		span { color: white; text-transform: uppercase; font-family: $gothic; font-size: 75px; border-bottom: 5px solid white;
 			@include breakpoint(smallscreen) { font-size: 60px; }
 			@include breakpoint(landscape) { font-size: 32px; }

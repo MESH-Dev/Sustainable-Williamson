@@ -6,8 +6,17 @@ jQuery(document).ready(function($){
 
   // Background images on homepage
 
-	$('#overview').parallax("50%", 0.2);
-  $('#image').parallax("30%", 0.1);
+  $window = $(window);
+  if( $window.width() > 800){
+    $('#overview').parallax("50%", 0.2);
+    $('#image').parallax("30%", 0.1);
+  };
+
+  if( $window.width() <= 800){
+    $('header').css("background-attachment", "scroll");
+    $('#overview').css("background-attachment", "scroll");
+    $('#image').css("background-attachment", "scroll");
+  };
 
   // Transition on header nav
 
