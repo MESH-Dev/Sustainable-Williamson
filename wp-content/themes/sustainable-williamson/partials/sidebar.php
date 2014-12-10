@@ -54,6 +54,18 @@ if( have_rows('sidebar') ):
       }
     }
 
+    if($sidebarItem['field_type'] == 'callout') {
+
+      ?>
+
+      <div class="callout">
+        <?php echo $sidebarItem['sidebar_callout']; ?>
+      </div>
+
+      <?php
+
+    }
+
   }
 
 endif; ?>
