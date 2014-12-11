@@ -6,7 +6,7 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header style="background: url(<?php the_field('header_image') ?>) no-repeat top center fixed; background-size: cover; background-attachment: scroll;">
+<header>
   <div class="row">
     <div class="nav-bar">
       <a href="https://www.google.com">
@@ -48,7 +48,7 @@
     </div>
   </div>
   <div class="row white-bg">
-    <div class="container">
+    <div class="container white-ribbon">
       <div class="angle-left">
         <i class="fa fa-angle-down"></i>
       </div>
@@ -85,6 +85,9 @@
       }else{
         echo "<p><em>main_nav</em> doesn't exist! Create it and it'll render here.</p>";
       } ?>
+  </div>
+
+  <div class="header-image" style="background: url(<?php the_field('header_image') ?>) no-repeat top center fixed; background-size: cover; background-attachment: scroll;">
   </div>
 
   <div class="container">
@@ -124,18 +127,23 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="home-callout">
-        <?php if(is_front_page()){ ?>
-          <span><?php the_field('headline'); ?></span>
-        <?php } else { ?>
-          <span><?php echo get_the_title(); ?></span>
-        <?php } ?>
-      </div>
-    </div>
   </div>
 
 </header>
 
 <!-- Open the wrapper -->
 <div class="wrapper">
+
+  <section id="slogan">
+    <div class="container">
+      <div class="row">
+        <div class="home-callout">
+          <?php if(is_front_page()){ ?>
+          <span><?php the_field('headline'); ?></span>
+          <?php } else { ?>
+          <span><?php echo get_the_title(); ?></span>
+          <?php } ?>
+        </div>
+      </div>
+    </div>
+  </section>
