@@ -9,13 +9,11 @@ jQuery(document).ready(function($){
   $window = $(window);
   if( $window.width() > 1025){
     $('#overview').parallax("50%", 0.2);
-    $('#image').parallax("30%", 0.1);
   };
 
   if( $window.width() <= 1025){
     $('header').css("background-attachment", "scroll");
     $('#overview').css("background-attachment", "scroll");
-    $('#image').css("background-attachment", "scroll");
   };
 
   // Transition on header nav

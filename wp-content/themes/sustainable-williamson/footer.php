@@ -3,7 +3,7 @@
     <div class="four columns">
       <div class="footer-content">
         <div class="footer-logo">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/WHWC_green_logo.png" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-white.png" />
         </div>
         <div class="footer-contact">
           <p>184 East 2nd Ave. Suite 201<br/>

@@ -1430,19 +1430,15 @@ header .top-third .top-third-text .sub-text {
   }
 }
 /* line 31, assets/sass/_layout.scss */
-header .top-third:hover {
-  opacity: 0.8;
-}
-/* line 33, assets/sass/_layout.scss */
 header .show {
   margin-top: 0px;
 }
-/* line 35, assets/sass/_layout.scss */
+/* line 33, assets/sass/_layout.scss */
 header .container {
   position: relative;
   height: 100%;
 }
-/* line 38, assets/sass/_layout.scss */
+/* line 36, assets/sass/_layout.scss */
 header #logo {
   float: right;
   overflow: visible;
@@ -1450,49 +1446,49 @@ header #logo {
   margin-top: 20px;
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 38, assets/sass/_layout.scss */
+  /* line 36, assets/sass/_layout.scss */
   header #logo {
     float: left;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 38, assets/sass/_layout.scss */
+  /* line 36, assets/sass/_layout.scss */
   header #logo {
     float: left;
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 38, assets/sass/_layout.scss */
+  /* line 36, assets/sass/_layout.scss */
   header #logo {
     float: left;
   }
 }
-/* line 42, assets/sass/_layout.scss */
+/* line 40, assets/sass/_layout.scss */
 header #logo img {
   max-width: none;
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 42, assets/sass/_layout.scss */
+  /* line 40, assets/sass/_layout.scss */
   header #logo img {
     width: 215px;
     margin-top: 20px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 42, assets/sass/_layout.scss */
+  /* line 40, assets/sass/_layout.scss */
   header #logo img {
     width: 215px;
     margin-top: 20px;
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 42, assets/sass/_layout.scss */
+  /* line 40, assets/sass/_layout.scss */
   header #logo img {
     width: 215px;
     margin-top: 20px;
   }
 }
-/* line 49, assets/sass/_layout.scss */
+/* line 47, assets/sass/_layout.scss */
 header #menu {
   display: none;
   float: right;
@@ -1501,35 +1497,35 @@ header #menu {
   cursor: pointer;
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 49, assets/sass/_layout.scss */
+  /* line 47, assets/sass/_layout.scss */
   header #menu {
     display: inline-block;
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 49, assets/sass/_layout.scss */
+  /* line 47, assets/sass/_layout.scss */
   header #menu {
     display: inline-block;
   }
 }
-/* line 54, assets/sass/_layout.scss */
+/* line 52, assets/sass/_layout.scss */
 header #mainNav {
   float: right;
   margin: 40px 0px;
 }
-/* line 55, assets/sass/_layout.scss */
+/* line 53, assets/sass/_layout.scss */
 header #mainNav ul {
   list-style: none;
   margin-left: none;
   float: right;
 }
-/* line 56, assets/sass/_layout.scss */
+/* line 54, assets/sass/_layout.scss */
 header #mainNav ul li {
   text-transform: uppercase;
   display: inline;
   padding: 0px 10px;
 }
-/* line 57, assets/sass/_layout.scss */
+/* line 55, assets/sass/_layout.scss */
 header #mainNav ul li a {
   color: #f8ee8f;
   font-family: "league-gothic";
@@ -1537,36 +1533,36 @@ header #mainNav ul li a {
   text-decoration: none;
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 57, assets/sass/_layout.scss */
+  /* line 55, assets/sass/_layout.scss */
   header #mainNav ul li a {
     font-size: 18px;
   }
 }
-/* line 60, assets/sass/_layout.scss */
+/* line 58, assets/sass/_layout.scss */
 header #mainNav ul li a:hover {
   opacity: 0.8;
 }
-/* line 62, assets/sass/_layout.scss */
+/* line 60, assets/sass/_layout.scss */
 header #mainNav ul li:last-child {
   padding-right: 0px;
 }
-/* line 63, assets/sass/_layout.scss */
+/* line 61, assets/sass/_layout.scss */
 header #mainNav ul li:first-child {
   padding-left: 0px;
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 54, assets/sass/_layout.scss */
+  /* line 52, assets/sass/_layout.scss */
   header #mainNav {
     display: none;
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 54, assets/sass/_layout.scss */
+  /* line 52, assets/sass/_layout.scss */
   header #mainNav {
     display: none;
   }
 }
-/* line 69, assets/sass/_layout.scss */
+/* line 67, assets/sass/_layout.scss */
 header #responsiveNav {
   display: none;
   float: left;
@@ -1577,33 +1573,33 @@ header #responsiveNav {
   z-index: 999;
   right: 0px;
 }
-/* line 70, assets/sass/_layout.scss */
+/* line 68, assets/sass/_layout.scss */
 header #responsiveNav ul {
   list-style: none;
   margin-left: 0px;
 }
-/* line 71, assets/sass/_layout.scss */
+/* line 69, assets/sass/_layout.scss */
 header #responsiveNav ul li {
   text-transform: uppercase;
   padding: 5px 10px;
   text-align: left;
 }
-/* line 72, assets/sass/_layout.scss */
+/* line 70, assets/sass/_layout.scss */
 header #responsiveNav ul li a {
   color: #f8ee8f;
   font-family: "league-gothic";
   font-size: 26px;
   text-decoration: none;
 }
-/* line 73, assets/sass/_layout.scss */
+/* line 71, assets/sass/_layout.scss */
 header #responsiveNav ul li a:hover {
   opacity: 0.8;
 }
-/* line 78, assets/sass/_layout.scss */
+/* line 76, assets/sass/_layout.scss */
 header .white-ribbon {
   width: 100%;
 }
-/* line 81, assets/sass/_layout.scss */
+/* line 79, assets/sass/_layout.scss */
 header .angle-left {
   float: left;
   color: black;
@@ -1617,24 +1613,24 @@ header .angle-left {
   margin-left: 15px;
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 81, assets/sass/_layout.scss */
+  /* line 79, assets/sass/_layout.scss */
   header .angle-left {
     display: none;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 81, assets/sass/_layout.scss */
+  /* line 79, assets/sass/_layout.scss */
   header .angle-left {
     display: none;
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 81, assets/sass/_layout.scss */
+  /* line 79, assets/sass/_layout.scss */
   header .angle-left {
     display: none;
   }
 }
-/* line 86, assets/sass/_layout.scss */
+/* line 84, assets/sass/_layout.scss */
 header .upside-down {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -1642,50 +1638,50 @@ header .upside-down {
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-/* line 88, assets/sass/_layout.scss */
+/* line 86, assets/sass/_layout.scss */
 header .content-right {
   float: right;
   padding-top: 5px;
   margin-right: 15px;
 }
-/* line 89, assets/sass/_layout.scss */
+/* line 87, assets/sass/_layout.scss */
 header .content-right span {
   color: #555555;
   font-family: nexa_bold;
   font-size: 14px;
   margin-right: 80px;
 }
-/* line 90, assets/sass/_layout.scss */
+/* line 88, assets/sass/_layout.scss */
 header .content-right img {
   position: absolute;
   top: -8px;
   right: 15px;
 }
 
-/* line 97, assets/sass/_layout.scss */
+/* line 95, assets/sass/_layout.scss */
 .home-callout {
   z-index: 999;
   text-align: center;
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 97, assets/sass/_layout.scss */
+  /* line 95, assets/sass/_layout.scss */
   .home-callout {
     margin-top: 245px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 97, assets/sass/_layout.scss */
+  /* line 95, assets/sass/_layout.scss */
   .home-callout {
     margin-top: 245px;
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 97, assets/sass/_layout.scss */
+  /* line 95, assets/sass/_layout.scss */
   .home-callout {
     margin-top: 265px;
   }
 }
-/* line 101, assets/sass/_layout.scss */
+/* line 99, assets/sass/_layout.scss */
 .home-callout span {
   color: white;
   text-transform: uppercase;
@@ -1694,25 +1690,25 @@ header .content-right img {
   border-bottom: 5px solid white;
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 101, assets/sass/_layout.scss */
+  /* line 99, assets/sass/_layout.scss */
   .home-callout span {
     font-size: 60px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 101, assets/sass/_layout.scss */
+  /* line 99, assets/sass/_layout.scss */
   .home-callout span {
     font-size: 32px;
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 101, assets/sass/_layout.scss */
+  /* line 99, assets/sass/_layout.scss */
   .home-callout span {
     font-size: 23px;
   }
 }
 
-/* line 107, assets/sass/_layout.scss */
+/* line 105, assets/sass/_layout.scss */
 .home-callout:after {
   content: url(assets/img/circle_and_line.png);
   position: relative;
@@ -1722,13 +1718,13 @@ header .content-right img {
   text-align: center;
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 107, assets/sass/_layout.scss */
+  /* line 105, assets/sass/_layout.scss */
   .home-callout:after {
     margin-top: 5px;
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 107, assets/sass/_layout.scss */
+  /* line 105, assets/sass/_layout.scss */
   .home-callout:after {
     margin-top: 5px;
   }
@@ -1740,15 +1736,16 @@ header .content-right img {
 ================================================== */
 /* Sidebar
 ================================================== */
-/* line 124, assets/sass/_layout.scss */
+/* line 122, assets/sass/_layout.scss */
 .sidebar {
   float: right !important;
+  margin-bottom: 20px;
 }
-/* line 125, assets/sass/_layout.scss */
+/* line 123, assets/sass/_layout.scss */
 .sidebar .textarea {
   margin: 0px auto 30px;
 }
-/* line 126, assets/sass/_layout.scss */
+/* line 124, assets/sass/_layout.scss */
 .sidebar .textarea .textarea-headline {
   font-family: "league-gothic";
   text-transform: uppercase;
@@ -1756,12 +1753,12 @@ header .content-right img {
   font-size: 22px;
   margin-bottom: 10px;
 }
-/* line 127, assets/sass/_layout.scss */
+/* line 125, assets/sass/_layout.scss */
 .sidebar .textarea .textarea-body {
   font-family: nexa_light;
   color: black;
 }
-/* line 130, assets/sass/_layout.scss */
+/* line 128, assets/sass/_layout.scss */
 .sidebar .callout {
   margin: 0px 0px 30px;
   font-family: nexa_light;
@@ -1769,65 +1766,65 @@ header .content-right img {
   line-height: 39px;
   color: black;
 }
-/* line 132, assets/sass/_layout.scss */
+/* line 130, assets/sass/_layout.scss */
 .sidebar blockquote {
   margin: 10px 0px 30px;
 }
 
 /* Homepage Styles
 ================================================== */
-/* line 138, assets/sass/_layout.scss */
+/* line 136, assets/sass/_layout.scss */
 .wrapper {
   top: 425px;
   position: absolute;
   width: 100%;
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 138, assets/sass/_layout.scss */
+  /* line 136, assets/sass/_layout.scss */
   .wrapper {
     top: 180px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 138, assets/sass/_layout.scss */
+  /* line 136, assets/sass/_layout.scss */
   .wrapper {
     top: 180px;
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 138, assets/sass/_layout.scss */
+  /* line 136, assets/sass/_layout.scss */
   .wrapper {
     top: 160px;
   }
 }
 
-/* line 144, assets/sass/_layout.scss */
+/* line 142, assets/sass/_layout.scss */
 #slogan {
   position: relative;
   top: 80px;
 }
 
-/* line 146, assets/sass/_layout.scss */
+/* line 144, assets/sass/_layout.scss */
 #content {
   background: #f8ee8f;
 }
-/* line 147, assets/sass/_layout.scss */
+/* line 145, assets/sass/_layout.scss */
 #content .content-callout {
   text-align: center;
   padding: 60px 16%;
 }
-/* line 148, assets/sass/_layout.scss */
+/* line 146, assets/sass/_layout.scss */
 #content .content-callout span {
   font-family: nexa_light;
   font-size: 22px;
   line-height: 35px;
 }
-/* line 150, assets/sass/_layout.scss */
+/* line 148, assets/sass/_layout.scss */
 #content .content-holder {
   height: 90px;
 }
 
-/* line 154, assets/sass/_layout.scss */
+/* line 152, assets/sass/_layout.scss */
 #overview .overview-callout {
   border: 2px solid black;
   padding: 35px;
@@ -1837,78 +1834,78 @@ header .content-right img {
   color: black;
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 154, assets/sass/_layout.scss */
+  /* line 152, assets/sass/_layout.scss */
   #overview .overview-callout {
     margin: 20px 0px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 154, assets/sass/_layout.scss */
+  /* line 152, assets/sass/_layout.scss */
   #overview .overview-callout {
     margin: 20px 0px;
   }
 }
 @media only screen and (max-width: 479px) {
-  /* line 154, assets/sass/_layout.scss */
+  /* line 152, assets/sass/_layout.scss */
   #overview .overview-callout {
     margin: 20px 0px;
   }
 }
-/* line 160, assets/sass/_layout.scss */
+/* line 158, assets/sass/_layout.scss */
 #overview .overview-callout .overview-callout-headline {
   font-family: "league-gothic";
   text-transform: uppercase;
   font-size: 22px;
   margin-bottom: 10px;
 }
-/* line 161, assets/sass/_layout.scss */
+/* line 159, assets/sass/_layout.scss */
 #overview .overview-callout .overview-callout-body {
   font-family: nexa_light;
 }
-/* line 163, assets/sass/_layout.scss */
+/* line 161, assets/sass/_layout.scss */
 #overview .overview-callout:hover {
   background: black;
   color: white;
 }
 
-/* line 166, assets/sass/_layout.scss */
+/* line 164, assets/sass/_layout.scss */
 #contact {
   background: white;
 }
-/* line 167, assets/sass/_layout.scss */
+/* line 165, assets/sass/_layout.scss */
 #contact .contact-callout {
   text-align: center;
   padding: 50px 10% 10px;
 }
-/* line 168, assets/sass/_layout.scss */
+/* line 166, assets/sass/_layout.scss */
 #contact .contact-callout p {
   font-family: nexa_light;
   font-size: 22px;
   line-height: 35px;
 }
 
-/* line 172, assets/sass/_layout.scss */
+/* line 170, assets/sass/_layout.scss */
 #testimonial {
   background: #f8ee8f;
 }
-/* line 173, assets/sass/_layout.scss */
+/* line 171, assets/sass/_layout.scss */
 #testimonial .testimonial-callout {
   text-align: center;
   padding: 50px 10%;
 }
-/* line 174, assets/sass/_layout.scss */
+/* line 172, assets/sass/_layout.scss */
 #testimonial .testimonial-callout span {
   font-family: "league-gothic";
   text-transform: uppercase;
   font-size: 22px;
 }
 
-/* line 179, assets/sass/_layout.scss */
+/* line 177, assets/sass/_layout.scss */
 #image .image-holder {
   height: 180px;
 }
 
-/* line 182, assets/sass/_layout.scss */
+/* line 180, assets/sass/_layout.scss */
 .header-image {
   height: 600px;
   position: absolute;
@@ -1919,65 +1916,65 @@ header .content-right img {
 
 /* PAGE Styles
 ================================================== */
-/* line 193, assets/sass/_layout.scss */
+/* line 191, assets/sass/_layout.scss */
 #page-content {
   padding-top: 30px;
 }
-/* line 194, assets/sass/_layout.scss */
+/* line 192, assets/sass/_layout.scss */
 #page-content .page-content-block {
   margin-left: 0px;
 }
 
 /* Contact Styles
 ================================================== */
-/* line 200, assets/sass/_layout.scss */
+/* line 198, assets/sass/_layout.scss */
 #wpgmza_map {
   margin-bottom: 30px;
 }
 
 /* FOOTER Styles
 ================================================== */
-/* line 207, assets/sass/_layout.scss */
+/* line 205, assets/sass/_layout.scss */
 footer {
   background: black;
   width: 100%;
 }
-/* line 208, assets/sass/_layout.scss */
+/* line 206, assets/sass/_layout.scss */
 footer .footer-content {
   padding: 30px 0px;
 }
-/* line 209, assets/sass/_layout.scss */
+/* line 207, assets/sass/_layout.scss */
 footer .footer-content .footer-logo {
   margin-bottom: 10px;
 }
-/* line 211, assets/sass/_layout.scss */
+/* line 209, assets/sass/_layout.scss */
 footer .footer-content .footer-contact p {
   font-family: nexa_light;
   color: white;
   line-height: 1.5em;
 }
-/* line 213, assets/sass/_layout.scss */
+/* line 211, assets/sass/_layout.scss */
 footer .footer-content .footer-headline {
   border-bottom: 3px solid white;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
-/* line 214, assets/sass/_layout.scss */
+/* line 212, assets/sass/_layout.scss */
 footer .footer-content .footer-headline span {
   font-family: "league-gothic";
   text-transform: uppercase;
   color: white;
   font-size: 22px;
 }
-/* line 216, assets/sass/_layout.scss */
+/* line 214, assets/sass/_layout.scss */
 footer .footer-content .footer-body {
   padding-bottom: 5px;
 }
-/* line 217, assets/sass/_layout.scss */
+/* line 215, assets/sass/_layout.scss */
 footer .footer-content .footer-body p {
   margin-bottom: 10px;
 }
-/* line 218, assets/sass/_layout.scss */
+/* line 216, assets/sass/_layout.scss */
 footer .footer-content .footer-body p a {
   font-family: "league-gothic";
   text-transform: uppercase;
@@ -2002,33 +1999,33 @@ footer .footer-content .footer-body p a {
 </a>
 
 */
-/* line 243, assets/sass/_layout.scss */
+/* line 241, assets/sass/_layout.scss */
 .btn-home {
   margin-bottom: 50px !important;
 }
 
-/* line 245, assets/sass/_layout.scss */
+/* line 243, assets/sass/_layout.scss */
 .btn {
   padding: 1% 10%;
   display: block;
   border: 2px solid black;
   color: black;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
-/* line 246, assets/sass/_layout.scss */
+/* line 244, assets/sass/_layout.scss */
 .btn .btn-headline {
   font-family: "league-gothic";
   text-transform: uppercase;
   font-size: 20px;
   line-height: 30px;
 }
-/* line 247, assets/sass/_layout.scss */
+/* line 245, assets/sass/_layout.scss */
 .btn .btn-body {
   font-family: nexa_light;
 }
 
-/* line 249, assets/sass/_layout.scss */
+/* line 247, assets/sass/_layout.scss */
 .btn:hover {
   background-color: black;
   color: white;
