@@ -1742,6 +1742,7 @@ header .content-right img {
 /* line 118, assets/sass/_layout.scss */
 .staff {
   margin-left: 0 !important;
+  margin-bottom: 50px;
 }
 
 /* line 119, assets/sass/_layout.scss */

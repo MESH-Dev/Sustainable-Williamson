@@ -9,10 +9,11 @@ jQuery(document).ready(function($){
   $window = $(window);
   if( $window.width() > 1025){
     $('#overview').parallax("50%", 0.2);
+    $('.header-image').parallax("50%", 0.2);
   };
 
   if( $window.width() <= 1025){
-    $('header').css("background-attachment", "scroll");
+    $('.header-image').css("background-attachment", "scroll");
     $('#overview').css("background-attachment", "scroll");
   };
 

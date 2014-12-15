@@ -87,7 +87,7 @@
       } ?>
   </div>
 
-  <div class="header-image" style="background: url(<?php the_field('header_image') ?>) no-repeat top center fixed; background-size: cover; background-attachment: scroll;">
+  <div class="header-image" style="background: url(<?php the_field('header_image') ?>) no-repeat top center fixed; background-size: cover;">
   </div>
 
   <div class="container">

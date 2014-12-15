@@ -81,7 +81,7 @@
   </div>
 </section>
 
-<section id="image" style="background: url(<?php the_field('background_image_2'); ?>) no-repeat top center fixed; background-size: cover;">
+<section id="image" style="background: url(<?php the_field('background_image_2'); ?>) no-repeat top center fixed; background-size: cover; background-attachment: scroll;">
   <div class="image-holder"></div>
 </section>
 
