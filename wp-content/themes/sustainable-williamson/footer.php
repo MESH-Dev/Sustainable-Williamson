@@ -1,5 +1,5 @@
 <section id="image">
-  <div class="image-holder" style="background: url(<?php the_field('background_image_2'); ?>) no-repeat top center fixed; background-size: cover; background-attachment: scroll;">
+  <div class="image-holder" style="background: url(<?php the_field('background_image_2', 6); ?>) no-repeat top center fixed; background-size: cover; background-attachment: scroll;">
   </div>
 </section>
 
