@@ -1527,7 +1527,7 @@ header #mainNav ul li {
 }
 /* line 55, assets/sass/_layout.scss */
 header #mainNav ul li a {
-  color: #f8ee8f;
+  color: white;
   font-family: "league-gothic";
   font-size: 24px;
   text-decoration: none;
