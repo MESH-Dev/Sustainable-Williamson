@@ -1523,13 +1523,13 @@ header #mainNav ul {
 header #mainNav ul li {
   text-transform: uppercase;
   display: inline;
-  padding: 0px 10px;
+  padding: 0px 5px;
 }
 /* line 55, assets/sass/_layout.scss */
 header #mainNav ul li a {
   color: white;
   font-family: "league-gothic";
-  font-size: 24px;
+  font-size: 26px;
   text-decoration: none;
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
