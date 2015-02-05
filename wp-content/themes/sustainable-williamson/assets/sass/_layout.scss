@@ -8,19 +8,12 @@
 ================================================== */
 
 header { background-position: top center; width: 100%; height: 700px; position: absolute; overflow: hidden; text-align: center; color: #fff;
-	.nav-bar { margin-top: -35px; position: relative; transition: 0.2s all; -webkit-transition: 0.2s all; -moz-transition: 0.2s all; -ms-transition: 0.2s all; -o-transition: 0.2s all;
-		@include breakpoint(landscape) { margin-top: -15px; }
-		@include breakpoint(portrait) { margin-top: 0px; }
-	}
+	.nav-bar { position: relative; transition: 0.2s all; }
 
-	.top-third { width: $one_third; float: left; min-height: 75px;
-		.top-third-text { margin-top: 10px; margin-bottom: 5px; position: relative;
-			.main-text { font-family: $gothic; text-transform: uppercase; color: white; font-size: 26px; margin-bottom: 10px; line-height: 26px; position: absolute; left: 0; right: 0; margin-left: auto; margin-right: auto;
-				@include breakpoint(smallscreen) { display: none; }
-				@include breakpoint(landscape) { display: none; }
-				@include breakpoint(portrait) { display: none; }
-			}
-			.sub-text { color: white; text-transform: uppercase; font-family: $nexa-bold; position: absolute; left: 0; right: 0; margin-left: auto; margin-right: auto; bottom: -55px;
+	.top-third { width: $one_third; float: left; min-height: 40px;
+		.top-third-text { margin-top: 10px; position: relative;
+			.main-text { color: black; text-transform: uppercase; font-family: $gothic; margin-left: auto; margin-right: auto; font-size: 20px; }
+			.sub-text { color: white; text-transform: uppercase; font-family: $nexa-bold; margin-left: auto; margin-right: auto;
 				@include breakpoint(smallscreen) { font-size: 13px; }
 				@include breakpoint(landscape) { font-size: 13px; }
 				@include breakpoint(portrait) { font-size: 13px; }
@@ -28,16 +21,16 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 		}
 	}
 
-	.show { margin-top: 0px; }
-
-	.container { position: relative; height: 100%;}
+	.container { position: relative; height: 100%; }
 
 	// first row
 	#logo { float: right; overflow: visible; position: relative; margin-top: 20px;
+		@include breakpoint(fullscreen) { float: left; }
 		@include breakpoint(smallscreen) { float: left; }
 		@include breakpoint(landscape) { float: left; }
 		@include breakpoint(portrait) { float: left; }
 		img { max-width: none;
+			@include breakpoint(fullscreen) { width: 215px; margin-top: 20px; }
 			@include breakpoint(smallscreen) { width: 215px; margin-top: 20px; }
 			@include breakpoint(landscape) { width: 215px; margin-top: 20px; }
 			@include breakpoint(portrait) { width: 215px; margin-top: 20px; }
@@ -48,6 +41,8 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 		@include breakpoint(landscape) { display: inline-block; }
 		@include breakpoint(portrait) { display: inline-block; }
 	}
+
+	.clinic-2, .platform-2, .outreach-2 { display: none; }
 
 	#mainNav { float: right; margin: 40px 0px;
 		ul { list-style: none; margin-left: none; float: right;
@@ -73,7 +68,7 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 		}
 	}
 
-	.white-ribbon { width: 100%; }
+	.white-ribbon { width: 100%; min-height: 20px; }
 
 	// second row
 	.angle-left { float: left; color: black; font-size: 25px; cursor: pointer; transition: 0.2s all; -webkit-transition: 0.2s all; -moz-transition: 0.2s all; -ms-transition: 0.2s all; -o-transition: 0.2s all; margin-left: 15px;
@@ -140,7 +135,7 @@ header { background-position: top center; width: 100%; height: 700px; position: 
 
 	.callout { margin: 0px 0px 30px; font-family: $nexa-light; font-size: 34px; line-height: 39px; color: black; }
 
-	blockquote { margin: 10px 0px 30px; }
+	blockquote { margin: 30px 0px 30px; }
 }
 
 /* Homepage Styles
@@ -227,11 +222,14 @@ footer { background: black; width: 100%;
 		.footer-body {  padding-bottom: 5px;
 			p { margin-bottom: 10px;
 				a { font-family: $gothic; text-transform: uppercase; color: white; font-size: 22px; text-decoration: none; }
+				a:hover { opacity: 0.7; }
 			}
 		}
 	}
 }
 
+.social-icon { background-color: white; color: black; border-radius: 50%; font-size: 20px; line-height: 35px; width: 30px; height: 30px; text-align:center; }
+.social-icon:hover { background-color: black; color: white; }
 
 /* #Button Styles
 ================================================== */
